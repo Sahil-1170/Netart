@@ -1,38 +1,225 @@
-.App {
+
+
+.navbar-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 350px;
+  height: auto;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  height: 100%;
+  width:100%;
+}
+
+.img{
+  width: 250px;
+}
+
+.img2{
+  width: 90%;
+  height: 350px;
+}
+
+.list-content{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.para-content{
+  font-size: 14px;
+}
+
+.para{
+  height: 20px;
+  margin-left: 25px;
+  margin-top: 35px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.img3{
+  width: 80%;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.content-2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.para-content-2{
+  font-size: 15px;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.red-line {
+  height: 3px; 
+  background-color: red;
+  margin-top: 20px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-3{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.content-3 {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.para-content-3{
+  font-weight: 500;
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.red-pipe {
+  color: red;
+}
+
+/* For devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
   }
-  to {
-    transform: rotate(360deg);
+
+  .img {
+    width: 100%; /* Make the image responsive */
+  }
+
+  .img2 {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .content {
+    text-align: center; /* Center-align content */
+    margin: 20px; /* Add some spacing around content */
+  }
+
+  .para {
+    margin: 20px; /* Add some spacing around content */
+  }
+
+  .container-2,
+  .container-3 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .red-line {
+    width: 100%; /* Make the red line span the entire width */
+    margin: 20px 0; /* Add some spacing above and below the red line */
+  }
+
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .footer i,
+  .footer span {
+    display: block; /* Display icons and text as block elements */
+    margin-bottom: 10px; /* Add spacing between icons and text */
   }
 }
+
+/* For larger devices */
+/* For devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .img2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .para {
+    margin: 20px;
+  }
+
+  .container-2,
+  .container-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .red-line {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* For larger devices */
+@media screen and (min-width: 769px) {
+  .container {
+    justify-content: space-around;
+  }
+
+  .img2 {
+    width: 70%;
+  }
+
+  .content,
+  .para {
+    margin: 0 20px;
+  }
+
+  .container-2,
+  .container-3 {
+    justify-content: space-around;
+  }
+
+  .footer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .container-2,
+  .container-3{
+    margin-top: 55px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+  }
+}
+
+

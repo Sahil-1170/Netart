@@ -1,0 +1,36 @@
+.footer {
+    background-color: #e03131;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-item i {
+    font-size: 18px;
+  }
+  
+  .footer-item p {
+    margin: 0;
+  }
+  
+  .footer-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
